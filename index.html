@@ -197,10 +197,13 @@
         }
 
         .card .date {
-            font-size: 0.85rem;
-            color: var(--accent-color);
-            margin-bottom: 0.8rem;
-            display: block;
+            display: flex;                  
+            justify-content: space-between; 
+            align-items: center;            
+            font-size: 0.85rem;             
+            color: var(--accent-color);     
+            margin-bottom: 0.8rem;         
+            width: 100%;                     
         }
 
         .card p {
@@ -349,25 +352,38 @@
     </section>
 
     <section id="educacion">
-        <h2><i class="fa-solid fa-graduation-cap"></i> Educación</h2>
-        <div class="timeline">
-            <div class="card">
-                <h3>Grado Universitario en Ingeniería Informática</h3>
-                <span class="date code-font">Universitat Oberta de Catalunya         2026 - Presente</span>
-                <p>Estudios enfocados en estructuras de datos, algoritmos, bases de datos y arquitectura de software.</p>
+    <h2><i class="fa-solid fa-graduation-cap"></i> Educación</h2>
+    <div class="timeline">
+        
+        <div class="card">
+            <h3>Grado Universitario en Ingeniería Informática</h3>
+            <div class="date code-font">
+                <span>Universitat Oberta de Catalunya</span>
+                <span class="year">2026 - Presente</span>
             </div>
-            <div class="card">
-                <h3>Máster Universitario en Inteligencia Artificial </h3>
-                <span class="date code-font">Universidad Internacional de Valencia    2024 - 2025</span>
-                <p>Cursos especializados en JavaScript avanzado, control de versiones (Git/GitHub) y diseño responsive.</p>
-            </div>
-            <div class="card">
-                <h3>Grado Universitario en Ingeniería Electrónica Industrial </h3>
-                <span class="date code-font">Universidad de Málaga                    2018 - 2022</span>
-                <p>Cursos especializados en JavaScript avanzado, control de versiones (Git/GitHub) y diseño responsive.</p>
-            </div>
+            <p>Estudios enfocados en estructuras de datos, algoritmos, bases de datos y arquitectura de software.</p>
         </div>
-    </section>
+
+        <div class="card">
+            <h3>Máster Universitario en Inteligencia Artificial</h3>
+            <div class="date code-font">
+                <span>Universidad Internacional de Valencia</span>
+                <span class="year">2024 - 2025</span>
+            </div>
+            <p>Cursos especializados en JavaScript avanzado, control de versiones (Git/GitHub) y diseño responsive.</p>
+        </div>
+
+        <div class="card">
+            <h3>Grado Universitario en Ingeniería Electrónica Industrial</h3>
+            <div class="date code-font">
+                <span>Universidad de Málaga</span>
+                <span class="year">2018 - 2022</span>
+            </div>
+            <p>Cursos especializados en JavaScript avanzado, control de versiones (Git/GitHub) y diseño responsive.</p>
+        </div>
+
+    </div>
+</section>
 
     <section id="habilidades">
         <h2><i class="fa-solid fa-code"></i> Habilidades</h2>
