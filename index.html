@@ -253,6 +253,46 @@
         .skill-item .fa-database { color: #00758F; }
         .skill-item .fa-terminal { color: #4D4D4D; }
 
+        /* CERTIFICACIONES */
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            max-width: 800px;
+        }
+ 
+        .cert-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            transition: transform 0.2s;
+        }
+ 
+        .cert-card:hover {
+            transform: translateY(-3px);
+        }
+ 
+        .cert-card img {
+            width: 56px;
+            height: 56px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+ 
+        .cert-card h3 {
+            font-size: 1.05rem;
+            margin-bottom: 0.3rem;
+        }
+ 
+        .cert-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
         /* CONTACTO */
         #contacto p {
             color: var(--text-muted);
@@ -449,6 +489,29 @@
             <div class="skill-item">
                 <i class="fa-solid fa-terminal"></i>
                 <span>Terminal</span>
+            </div>
+        </div>
+    </section>
+
+     <section id="certificaciones">
+        <h2><i class="fa-solid fa-certificate"></i> Certificaciones</h2>
+        <div class="certifications-grid">
+            <!-- AWS Certified AI Practitioner -->
+            <div class="cert-card">
+                <img src="https://cdn.simpleicons.org/amazonwebservices/FF9900" alt="AWS">
+                <div>
+                    <h3>AWS Certified AI Practitioner</h3>
+                    <p>Amazon Web Services</p>
+                </div>
+            </div>
+ 
+            <!-- Databricks Accredited Generative AI Fundamentals -->
+            <div class="cert-card">
+                <img src="https://cdn.simpleicons.org/databricks/FF3621" alt="Databricks">
+                <div>
+                    <h3>Databricks Accredited Generative AI Fundamentals</h3>
+                    <p>Databricks</p>
+                </div>
             </div>
         </div>
     </section>
